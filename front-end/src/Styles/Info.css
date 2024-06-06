@@ -1,0 +1,338 @@
+/*
+#nav_Head_Side{
+    display: none;
+}
+
+.side_Bar{
+    display: none;
+}
+
+
+
+#nav_Head{
+    background-color: rgba(164, 188, 206, 0.75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 1s ease;
+}
+
+#nav_Head ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav_Head li{
+    cursor: pointer;
+    font-size: 30px;
+    width: fit-content;
+    padding: .60em 0 .60em 0;
+    transition: background-color 100ms ease-in-out;
+}
+
+
+#nav_Head li:hover{
+    background-color: rgb(162, 164, 166);
+    mix-blend-mode: difference;
+}
+
+#nav_Head a{
+    text-decoration: none;
+    margin: 0 1em;
+    color: black;
+    height: 100%;
+}
+
+
+@keyframes sidebar_Animation {
+    0%  {width: 0%;
+         left: -100%;}
+    100%    {width: 20%;
+             left: 0%;}
+}
+
+Do not effect code above!!!!*/
+
+
+#info_Delivery_INFO{
+    position: relative;
+    width: 100%;
+    padding: 3em 0 0 0;
+    background-color: rgb(70, 78, 103);
+    color: white;
+    padding-bottom: .40em;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.55);
+}
+
+#info_Delivery_INFO h1{
+    font-size: 50px;
+}
+
+#info_Delivery_INFO p{
+    font-size: 25px;
+}
+
+#info_Delivery_INFO label{
+    font-size: 20px;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
+}
+
+#info_Delivery_INFO input, select{
+    width: 45%;
+    font-size: 15px;
+    margin: 0 .50em 0 .50em;
+}
+
+#info_Delivery_INFO form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+}
+
+#info_Delivery_INFO #address_Confirmation_BTN{
+    width: 10%;
+    padding: .40em 0;
+    border-radius: 2em 2em;
+}
+
+/*Will effect the sizing and display of the maps div*/
+#info_MAP{
+    display: flex;
+    justify-content: center;
+    margin-top: .30em;
+    z-index: 10;
+}
+
+/*This will set the size of the map*/
+.leaflet-container{
+    height: 40vh;
+    width: 50vw;
+    z-index: 10;
+}
+
+
+#user_Information{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#user_Information p{
+    width: fit-content;
+    word-spacing: 5px;
+    font-size: 35px;
+    background-color: rgb(70, 78, 103);
+    padding: .20em 2em;
+    border-radius: 10em 10em;
+    color: white;
+}
+
+#info_Body{
+    width: 100%;
+    color: white;
+    background-color: rgb(70, 78, 103);
+    padding: .20em 0 1em;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.55);
+}
+
+#info_Body h2{
+    font-size: 40px;
+    margin:  1em 0 0 1em
+}
+
+#info_Body p{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    opacity: 0;
+}
+
+
+#info_Body p.show{
+    animation: fade-in ease 1s forwards;
+    z-index: 50;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(75%);
+    }
+}
+
+@media screen and (max-width: 500px){
+    /*These get rid of the elements from the computer view so that they don't mix*/
+    .computer_Head{
+        display: none;
+    }
+    .computer_Head .nav_List{
+        display: none;
+    }
+
+    #nav_Head{
+        display: none;
+    }
+     /*These get rid of the elements from the computer view so that they don't mix*/
+
+
+    
+    /*This starts the code for the sidebar (DONT EDIT)*/
+    .side_Bar{
+        display: flex;
+    }
+    
+    .side_Bar{
+        color: black;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 40px;
+        width: max-content;
+        margin: 5% 0 0 5%;
+        mix-blend-mode: normal;
+        z-index: 998;
+        transition: color 0.5s ease-out;
+    }
+    
+    .side_Bar:hover{
+        color: white;
+    }
+    
+    #nav_Head_Side{
+        background-color: rgb(188, 192, 195);
+        position: fixed;
+        top: 0;
+        left:  0;
+        height: 100%;
+        width: 35%;
+        display: none;
+        backdrop-filter: blur(80px);
+        align-items:flex-start;
+        flex-direction: row;
+        text-align: center;
+        animation: sidebar_Animation 0.4s ease;
+        z-index: 999;
+    }
+
+    #nav_Head_Side ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    #nav_Head_Side li{
+        width: 100%;
+        cursor: pointer;
+        font-size: 30px;
+        margin: 10% 0 0 0;
+        padding: 10% 0 10% 0;
+        transition: background-color 0.15s ease-in-out;
+    }
+    
+    #nav_Head_Side li:hover{
+        background-color: rgb(162, 164, 166);
+    }
+    
+    #nav_Head_Side li:nth-child(1){
+        font-size: 40px;
+        margin: 5% 0 0 5%;
+        padding: 5% 5% 5% 5%;
+        width: fit-content;
+        animation: sidebar_Animation reverse 0.5s ease;
+    }
+    
+    
+    #nav_Head_Side a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+
+    #info_Delivery_INFO{
+        width: 100%;
+    }
+   
+
+    #info_Delivery_INFO h1{
+        font-size: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #info_Delivery_INFO p{
+        font-size: 20px;
+        text-align: center;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #info_Delivery_INFO h2{
+        font-size: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    #UniqueForm{
+        width: 800%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #UniqueForm div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info_Delivery_INFO label{
+        font-size: 20px;
+    }
+
+    #info_Delivery_INFO input{
+        width: 20em;
+    }
+
+    #info_Delivery_INFO #address_Confirmation_BTN{
+        width: 10em;
+        margin-top: 1em;
+    }
+
+    #info_Body h2{
+        margin: .40em 0 0 .60em;
+        padding: 0;
+    }
+
+    #info_Body p{
+        font-size: 20px;
+        width: 85%;
+        margin: .30em 0;
+        text-align: center;
+        position: relative;
+        bottom: 1em;
+    }
+
+    #info_Map{
+        width: 50%;
+    }
+   
+}

@@ -1,0 +1,150 @@
+body{
+  background-color: rgb(126, 140, 183);
+}
+
+#fp_outline_header {
+  position: absolute;
+  width: 20.5%;
+  color: white;
+  background-color: rgb(39, 43, 63);
+  text-align: center;
+  padding-right: 3%;
+  border-bottom: 10px solid rgb(23, 24, 26);
+  cursor: pointer;
+  z-index: 4;
+}
+
+#fp_suboutline_header{
+  background-color: rgb(59, 67, 89);
+  color: white;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  width: 23.5%;
+}
+
+
+/* side display that will hover and change color*/
+.subMenuOption{
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  cursor: pointer;
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+  transition: color 0.3s ease-in-out;
+}
+
+.subMenuOption a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.subMenuOption:hover{
+  color: black;
+}
+
+
+.subMenuOption::before{
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color .25s ease-in-out, width 0.25s ease-in-out;
+}
+
+.subMenuOption:hover::before{
+  width: 50%;
+  background-color: rgb(118, 144, 159);
+  z-index: -1;
+}
+
+.subMenuOption::after{
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: background-color .25s ease-in-out, width 0.25s ease-in-out;
+}
+
+.subMenuOption:hover::after{
+  width: 50%;
+  background-color: rgb(118, 144, 159);
+  z-index: -1;
+}
+
+
+#fp_outline_header, #fp_suboutline_header{
+  border-right: 3px solid black;
+}
+/* end of hover selections*/ 
+
+
+/* Black img background for picture of Blu*/
+#fptop_background{
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: rgb(28, 25, 24);
+  z-index: -5;
+  border-bottom: 3px solid white;
+}
+
+
+/*Beginning of custom area \/ */
+#catalog_top{
+  position: absolute;
+  top: 41%;
+  left: 30%;
+  padding-left: 20px;
+  background-color: rgb(68, 98, 137);
+  border-radius: 10px 5px 10px 5px;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+  border-top: 0px;
+  max-width: fit-content;
+}
+
+#catalog_middle{
+  position: absolute;
+  top: 90%;
+  left: 30%;
+  padding-left: 20px;
+  background-color: rgb(68, 98, 137);
+  border-radius: 10px 5px 10px 5px;
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+  max-width: fit-content;
+}
+
+.catalog_Specification{
+  z-index: 10;
+  color: white;
+  font-size: 40px;
+  font-family: cursive;
+  font-weight: 400px;
+  text-decoration:underline; 
+}
+
+#custom_catalog_header{
+  margin-top: 0;
+  z-index: 10;
+  color: white;
+  font-size: 35px;
+  font-family: cursive;
+
+}
+
+
+/* End of custom area ^ */

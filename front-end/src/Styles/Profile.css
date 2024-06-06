@@ -1,0 +1,93 @@
+#body_Div{
+    margin: 0;
+    position: relative;
+}
+
+#body_Div::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img_Folder/mainPage_BluPic.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
+    z-index: -1;
+}
+
+#head_Profile{
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    padding: 2em 0 1em 0;
+    background-color: rgb(70, 78, 103);
+    box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#form_Entry{
+    background-color: rgb(93, 103, 133);
+    box-shadow: 1px 6px 5px rgba(0, 0, 0, 0.55);
+    width: 50%;
+}
+
+#form_Entry h1{
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#form_Entry input{
+    width: 20em;
+    height: 2.5em;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+#log-in_Form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+#Sign-Up_Area{
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Sign-Up_Btn{
+   
+    display: flex;
+    justify-content: center;
+}
+
+#Sign-Up_Btn a{
+    padding: 1em;
+    border-radius: 50%;
+    background-color: rgb(60, 66, 84);
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: .25s ease;
+}
+
+#Sign-Up_Btn a:hover{
+    background-color: rgb(74, 81, 103);
+}
+
+
+@media screen and (max-width: 850px){
+
+    #form_Entry{
+        width: 80%;
+    }
+
+}
