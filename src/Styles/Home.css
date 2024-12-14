@@ -18,7 +18,7 @@ body{
     top: 0;
     width: 100%;
     z-index: 999;
-    transition: background-color 1s ease;
+   /* transition: background-color 1s ease; */
 }
 
 #nav_Head ul{
@@ -34,7 +34,7 @@ body{
     font-size: 30px;
     width: fit-content;
     padding: .60em 0 .60em 0;
-    transition: background-color 100ms ease-in-out;
+   /* transition: background-color 100ms ease-in-out; */
 }
 
 
@@ -216,23 +216,25 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: .40em;
     font-size: 80px;
-    transition: .9s ease-in-out;
+   /* transition: .9s ease-in-out; */
 }
 
 /*This is the basket icon used to take the user to the continue to payment page*/
 #store_Body #shopping_Cart{
     float: right;
     position: sticky;
+    text-decoration: none;
     top: 3em;
+    color: black;
     font-size: 5em;
     margin: .10em .60em 0 0 ;
     cursor: pointer;
     display: flex;
     align-items: center;
-    transition: .5s ease-in-out;
+   /* transition: .2s ease-in-out; */
 }
 
-#store_Body a:hover{
+#store_Body #shopping_Cart:hover{
     color: white;
 }
 
@@ -445,7 +447,7 @@ footer table{
         bottom: 3em;
         position: relative;
         left: 0em;
-        transition: 1s ease-in-out;
+       /* transition: 1s ease-in-out; */
     }
 
     
@@ -493,7 +495,7 @@ footer table{
 
     #store_Header h1{
         font-size: 40px;
-        transition: .9s ease-in-out;
+      /*  transition: .9s ease-in-out; */
     }
 
     #store_Header a{
@@ -523,7 +525,7 @@ footer table{
 
     #store_Body #shopping_Cart{
         font-size: 4em;
-        transition: .5s ease-in-out;
+      /*  transition: .5s ease-in-out; */
     }
 
     #shopping_Cart{

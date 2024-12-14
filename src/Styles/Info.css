@@ -70,38 +70,59 @@ Do not effect code above!!!!*/
 
 #info_Delivery_INFO h1{
     font-size: 50px;
+    margin-top: 2rem;
 }
 
 #info_Delivery_INFO p{
     font-size: 25px;
 }
 
+#info_Delivery_INFO h2{
+    margin: 0.6em 0.9em;
+}
+
 #info_Delivery_INFO label{
-    font-size: 20px;
+    font-size: 30px;
 }
 
-form div{
+
+#UniqueForm{
     display: flex;
     justify-content: center;
+    align-items:center;
+    width: 100%;
 }
 
-#info_Delivery_INFO input, select{
-    width: 45%;
-    font-size: 15px;
-    margin: 0 .50em 0 .50em;
-}
-
-#info_Delivery_INFO form{
+#uniqueForm div{
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 94%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#UniqueForm label{
+    color: white;
+    width: 100%;
+}
+
+.infoInformation{
+    width: 100%;
+    font-size: 25px;
+    
+}
+
+#form_Container{
+    background-color: rgb(27, 39, 53);
+    padding: 3em;
 }
 
 #info_Delivery_INFO #address_Confirmation_BTN{
-    width: 10%;
-    padding: .40em 0;
-    border-radius: 2em 2em;
+    width: 80%;
+    padding: 1em 0;
+    margin: 1em 0 0 0;
+    align-self: center;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 /*Will effect the sizing and display of the maps div*/
@@ -115,8 +136,12 @@ form div{
 /*This will set the size of the map*/
 .leaflet-container{
     height: 40vh;
-    width: 50vw;
+    width: 50%;
     z-index: 10;
+    margin: 2em 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

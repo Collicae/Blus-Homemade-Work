@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {FiAlignJustify, FiX} from "react-icons/fi";
+import Cookies from "js-cookie";
+import AutoLogin from "./load";
+import axios from "axios";
 
 
 

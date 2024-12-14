@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
-import Info from './Pages/Info';
-import Product from './Pages/Products';
-import Profile from './Pages/Profile';
-import Home from './Pages/Home';
-import Sign from './Pages/Sign-Up';
-
+import Info from '../src/Pages/Info';
+import Product from '../src/Pages/Products';
+import Profile from '../src/Pages/Profile';
+import Home from '../src/Pages/Home';
+import Sign from '../src/Pages/Sign-Up';
+import Food from "../src/Pages/Food";
+import Cart from "../src/Pages/Cart";
+import UserProfile from "./components_Folder/token";
 
 const Routes_pages = () => {
     return(
@@ -30,6 +32,10 @@ const Routes_pages = () => {
                 <Route path="/Sign" Component={Sign}>
 
                 </Route>
+
+                <Route path="/Food/:id" element={<Food />} />
+
+                <Route path="/UsersCart" element={<Cart/>} />
             </Routes>
         </Router>
     )

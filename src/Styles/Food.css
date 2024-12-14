@@ -1,0 +1,156 @@
+#foodHeader{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#foodHeader h1{
+    position:absolute;
+    left: 4%;
+    font-size: 3.5em;
+    top: 12.5em;
+    color: rgb(188, 185, 185);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: font-size 1s ease;
+    z-index: 99;
+}
+
+#foodHeader img{
+    width: 100%;
+    height: 52em;
+    filter: brightness(35%);
+    z-index: -1;
+}
+
+
+#shopping_Cart{
+    position: absolute;
+    top: .30em;           
+    right: 1.1em;        
+    margin-top: 1em;
+    font-size: 5.5em;
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s ease;
+    display: flex;
+    align-items: center;
+    z-index: 100; 
+}
+
+#shopping_Cart:hover{
+    color: rgb(183, 182, 182);
+}
+
+
+#foodBody{
+    position: relative;
+    bottom: 3px;
+    background-color: grey;
+}
+
+#foodBody div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    gap: .50em;
+    z-index: 99;
+}
+
+#foodBody div p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.8em;
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+    padding: 1em;
+}
+
+#foodBody input, #foodBody label{
+
+    height: 40%;
+    font-size: 40px;
+}
+
+#foodBody{
+    width: 100%;
+    z-index: 100;
+}
+
+#foodAmount{
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(65, 65, 65);
+    font-size: 35px;
+    align-items: center;
+}
+
+#foodAmount #priceShow{
+    display: block;
+    width: 4em;
+    height: 7em;
+}
+
+#foodAmount form{
+    border: 0px;
+    display: block;
+    background-color: rgb(65, 65, 65);
+    padding: 0;
+}
+
+#foodAmount label{
+    margin-right: .60em;
+    color: black;
+}
+
+#foodAmount .bagSize{
+    height: 25px;
+    padding: 0;
+    margin: 0 1em 0 0;
+    transform: scale(1.5);
+    font-size: 15px;
+}
+
+#foodAmount .bagText{
+    padding: 0;
+}
+
+#foodAmount button{
+    cursor: pointer;
+    height: 50px;
+    width: 10em;
+    font-size: 30px;
+    margin-top: 1em;
+}
+
+
+@media screen and (max-width: 850px){
+    #foodAmount{
+        font-size: 25px;
+    }
+
+    #foodForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #formQuantity label{
+        font-size: 33px;
+    }
+
+    #formQuantity input{
+        font-size: 25px;
+        width: 40%
+    };
+
+    #foodForm label{
+        font-size: 35px;
+    }
+
+    #foodAmount button{
+        font-size: 20px;
+    }
+}

@@ -117,7 +117,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     transform: scale(.8);
-    transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out; 
 }
 
 .picture_Select-Active{
@@ -141,7 +141,7 @@
    border-radius: 50%;
    display: inline-block;
    margin: 0 .20em;
-   transition: 0.2s ease-in-out;
+  /* transition: 0.2s ease-in-out; */
 }
 
 .picture_Select_Cards:hover{
@@ -295,7 +295,7 @@ footer table{
 @media screen and (max-width: 850px){
     #products_Head{
         font-size: 20px;
-        transition: font-size 1s ease-in-out;
+      /*  transition: font-size 1s ease-in-out; */
         display: flex;
         justify-content: center;
     }
@@ -303,28 +303,28 @@ footer table{
 
     #times_Feeding_Wrapper{
         width: 100%;
-        transition: 1s ease-in-out;
+       /* transition: 1s ease-in-out; */
     }
 
     #times_Feeding img{
         display: none;
-        transition: 1s ease-in-out;
+      /*  transition: 1s ease-in-out; */
     }
 
     #extra_Features_Wrapper{
         width: 100%;
-        transition: 1s ease-in-out;
+       /* transition: 1s ease-in-out; */
     }
 
     #extra_Features img{
         display: none;
-        transition: 1s ease-in-out;
+      /*  transition: 1s ease-in-out; */
     }
 
     #product_Footer{
         position: relative;
         top: 33em;
-        transition: 1s ease-in-out;
+      /*  transition: 1s ease-in-out; */
     }
 
     .picture_Select_Options{
@@ -334,6 +334,6 @@ footer table{
 
     .picture_Select_Cards{
         padding: .2em;
-        transition: 1s ease;
+       /* transition: 1s ease; */
     }
 }
