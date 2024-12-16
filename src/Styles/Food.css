@@ -65,7 +65,7 @@
 #foodBody div{
     display: flex;
     justify-content: space-evenly;
-    padding: 1em;
+    padding: 1em 0;
     gap: .50em;
     z-index: 99;
 }
@@ -81,7 +81,7 @@
 }
 
 #foodBody input, #foodBody label{
-
+    margin: 0 0 0.5em ;
     height: 40%;
     font-size: 40px;
 }
@@ -109,7 +109,8 @@
 
 #foodAmount form{
     border: 0px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(65, 65, 65);
     padding: 0;
 }
@@ -140,9 +141,20 @@
 }
 
 
+@media screen and (max-width: 750px){
+    #shopping_Cart, #backArrow{
+        font-size: 4.5em;
+    }
+}
+
+
 @media screen and (max-width: 850px){
     #foodAmount{
         font-size: 25px;
+    }
+
+    #foodBody div p{
+        font-size: 1.3em;
     }
 
     #foodForm{
@@ -151,8 +163,13 @@
         align-items: center;
     }
 
+    #foodAmount .bagSize{
+        font-size: 10px;
+        height: 12px;
+    }
+
     #formQuantity label{
-        font-size: 33px;
+        font-size: 26px;
     }
 
     #formQuantity input{
@@ -166,5 +183,9 @@
 
     #foodAmount button{
         font-size: 20px;
+    }
+
+    #qantity{
+        width: 70%;
     }
 }
