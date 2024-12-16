@@ -163,6 +163,10 @@
         align-items: center;
     }
 
+     #foodAmount #priceShow{
+        font-size: 25px;
+    }
+
     #foodAmount .bagSize{
         font-size: 10px;
         height: 12px;
