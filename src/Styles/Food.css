@@ -149,6 +149,18 @@
 
 
 @media screen and (max-width: 850px){
+    #backArrow{
+        left: 0.5em;
+    }
+
+    #shopping_Cart{
+        right: 0.5em;
+    }
+
+    #shopping_Cart, #backArrow{
+        font-size: 4.5em;
+    }
+    
     #foodAmount{
         font-size: 25px;
     }
