@@ -88,4 +88,8 @@ form div{
         height: 20px;
 
     }
+
+     #sign_UP_USER button{
+        width: 60%;
+    }
 }
