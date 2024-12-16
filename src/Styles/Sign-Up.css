@@ -79,21 +79,30 @@ form div{
 
 @media screen and (max-width: 830px){
 
-    h1{
-        font-size: 1.5em;
+      h1{
+        font-size: 2em;
+    }
+
+    #signup_Form{
+        padding: 0;
+        width: 100%;
+        margin: 0 2em;
     }
 
     label{
         font-size: 20px;
+        margin: 0 1em;
     }
 
-    input{
-        width: 100%;
-        height: 20px;
+    #signup_Form .additional_Input{
+        width: 75%;
+        height: 30px;
+        margin: 0 1em;
 
     }
 
-     #sign_UP_USER button{
+    #sign_UP_USER button{
         width: 60%;
+        margin-bottom: 1em;
     }
 }
