@@ -23,11 +23,11 @@ const InfopageComp = () => {
       const scroll_Position = window.scrollY;
       console.log(window.innerHeight)
     
-      if(scroll_Position > 500) {
+      if(scroll_Position > 400) {
         subTxt1.classList.add('show')
       };
     
-      if(scroll_Position > 600) {
+      if(scroll_Position > 500) {
         subTxt2.classList.add('show')
       };
     

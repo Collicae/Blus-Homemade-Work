@@ -61,15 +61,15 @@ const HomepageComp = () => {
       const scroll_Position = window.scrollY;
       console.log(window.innerHeight)
     
-      if (scroll_Position > 300) {
+      if (scroll_Position > 70) {
         header_Txt.classList.add('show')
       };
     
-      if(scroll_Position > 400) {
+      if(scroll_Position > 200) {
         sub_Txt1.classList.add('show')
       };
     
-      if(scroll_Position > 470) {
+      if(scroll_Position > 300) {
         sub_Txt2.classList.add('show')
       };
     
@@ -164,7 +164,7 @@ useEffect(() => {
 }, [Inventory]); // Re-run the effect when Inventory changes
 
 
-  //Between her is the code used for gathering the cookie data
+  //Between here is the code used for gathering the cookie data
     const userId = Object.keys(Cookies.get()).find(key => key.startsWith('ID_'));
       const [email, setEmail] = useState('');
       const [firstName, setFirstName] = useState('');

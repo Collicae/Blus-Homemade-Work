@@ -3,7 +3,8 @@ import pre_Made_Pic1 from "../Img_Folder/veggie with BB.jpeg";
 import pre_Made_Pic2 from "../Img_Folder/SweetP with BB.jpeg";
 import custom_Pic from "../Img_Folder/cst_Pic.jpeg";
 import "../Styles/Food.css";
-import { FiShoppingBag } from "react-icons/fi";
+import { FiShoppingBag} from "react-icons/fi";
+import { MdArrowBack } from 'react-icons/md';
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
@@ -26,6 +27,8 @@ const Food_App = () => {
   const [addedAmount, setaddedAmount] = useState('')
 
   let shownFoodPic, foodTitle, foodDescription, ingredientList, smallBagCost, bigBagCost;
+
+
 
   const handleQuantity = (e) => {
     const value = Math.max(1, Math.min(99, e.target.value));
@@ -115,10 +118,14 @@ useEffect(() => {
 
   return (
     <div>
+      <ScrollTopDefault/>
       <div id="foodHeader">
         <Link id="shopping_Cart" to={"/UsersCart"}> 
           {cartHoldings}<FiShoppingBag />
         </Link>
+        <Link to={"/"} id="backArrow">
+        <MdArrowBack/>
+       </Link>
         <h1>{foodTitle}</h1>
         <img src={shownFoodPic} alt={foodTitle} />
       </div>

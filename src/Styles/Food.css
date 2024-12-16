@@ -22,6 +22,20 @@
     z-index: -1;
 }
 
+#backArrow{
+    position: absolute;
+    top: .30em;           
+    left: 1.1em;        
+    margin-top: 1em;
+    font-size: 5.5em;
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s ease;
+    display: flex;
+    align-items: center;
+    z-index: 100; 
+}
+
 
 #shopping_Cart{
     position: absolute;
@@ -37,7 +51,7 @@
     z-index: 100; 
 }
 
-#shopping_Cart:hover{
+#shopping_Cart:hover, #backArrow:Hover{
     color: rgb(183, 182, 182);
 }
 

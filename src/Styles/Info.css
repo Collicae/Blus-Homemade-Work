@@ -198,7 +198,7 @@ Do not effect code above!!!!*/
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 900px){
     /*These get rid of the elements from the computer view so that they don't mix*/
     .computer_Head{
         display: none;
@@ -288,8 +288,6 @@ Do not effect code above!!!!*/
     }
 
 
-
-
     #info_Delivery_INFO{
         width: 100%;
     }
@@ -317,29 +315,43 @@ Do not effect code above!!!!*/
     }
 
     #UniqueForm{
-        width: 800%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #uniqueForm{
         display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     #UniqueForm div{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     #info_Delivery_INFO label{
-        font-size: 20px;
+        font-size: 40px;
     }
 
     #info_Delivery_INFO input{
-        width: 20em;
+        width: 80%;
+        height: 30%;
+        font-size: 30px;
+    }
+
+    #info_Delivery_INFO #State_Info{
+        width: 80%;
     }
 
     #info_Delivery_INFO #address_Confirmation_BTN{
         width: 10em;
         margin-top: 1em;
+    }
+
+    #info_MAP{
+        margin: 0 2em;
     }
 
     #info_Body h2{
