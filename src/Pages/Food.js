@@ -156,7 +156,6 @@ useEffect(() => {
               required
             />
             <br />
-            <br />
 
             <div id="foodForm">
             <label className="bagText">
