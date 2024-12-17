@@ -222,9 +222,9 @@ body{
 /*This is the basket icon used to take the user to the continue to payment page*/
 #store_Body #shopping_Cart{
     float: right;
-    position: sticky;
+    position: relative;
     text-decoration: none;
-    top: 3em;
+    bottom: 3em;
     color: black;
     font-size: 5em;
     margin: .10em .60em 0 0 ;
