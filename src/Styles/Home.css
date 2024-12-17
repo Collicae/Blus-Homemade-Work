@@ -517,6 +517,7 @@ footer table{
         width: 95%;
         height: 15em;
         overflow-y: hidden;
+        gap: 1.3em;
     }
 
     #store_Body div{
@@ -524,6 +525,9 @@ footer table{
         height: auto;
        }
     
+    .outer_Main_Slider{
+        max-width: 85%;
+    }
 
     .inner_Main_Slider a{
         font-size: 23px;
