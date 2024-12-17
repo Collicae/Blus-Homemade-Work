@@ -288,6 +288,7 @@ body{
 }
 
 .outer_Main_Slider {
+    max-width: 100%;
     overflow-x: auto;  /* Add horizontal scrolling to the outer container if needed */
 }
 
