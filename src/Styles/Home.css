@@ -280,11 +280,15 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    overflow-x: auto;
+    overflow-x: hidden;
     grid-gap: 5px;
-    width: 65%;
+    width: 100%;
+    white-space: norap;
     text-align: center;
-    
+}
+
+.outer_Main_Slider {
+    overflow-x: auto;  /* Add horizontal scrolling to the outer container if needed */
 }
 
 .inner_Main_Slider{
