@@ -280,9 +280,9 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    overflow-x: hidden;
+    overflow-x: auto;
     grid-gap: 5px;
-    width: 100%;
+    width: 65%;
     white-space: norap;
     text-align: center;
 }
