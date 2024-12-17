@@ -232,11 +232,12 @@ useEffect(() => {
           {/* Make a to Link that will take the user to the Cart Page */}
           <Link id="shopping_Cart" to={"/UsersCart"}>{cartHoldings}<FiShoppingBag /></Link>
           
+          {/*
           <nav>
             <h4 className="select_Header_Type">Custom:</h4>
             <CustomProductsMenu />
           </nav>
-
+           */}
           <nav>
             <h4 className="select_Header_Type">Pre-Made:</h4>
             <PremadeProductsMenu />
