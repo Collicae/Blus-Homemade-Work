@@ -521,7 +521,7 @@ footer table{
     }
 
     #store_Body div{
-        width: 98%;
+        width: 100%;
         height: auto;
        }
     
@@ -535,7 +535,8 @@ footer table{
     }
 
     #store_Body #shopping_Cart{
-        font-size: 4em;
+        font-size: 3.5em;
+        margin: 0 0 0.5em;
       /*  transition: .5s ease-in-out; */
     }
 
