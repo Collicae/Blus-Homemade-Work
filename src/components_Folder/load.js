@@ -14,7 +14,7 @@ const AutoLogin = ({ userId }) => {
 
                 try {
                     const userRequests = userId.map(id => 
-                        axios.get(`http://127.0.0.1:8000/api/create/${id}`)
+                        axios.get(`https://blushomemade-e0fkbbdtaadtcuhw.canadacentral-01.azurewebsites.net/api/create/${id}`)
                     );
 
                     const responses = await Promise.all(userRequests);
