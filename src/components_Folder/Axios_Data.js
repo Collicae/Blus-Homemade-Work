@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://127.0.0.1:8000"
+const baseUrl = "https://blushomemade-e0fkbbdtaadtcuhw.canadacentral-01.azurewebsites.net"
 
 const axios_Create = axios.create({
     baseURL: baseUrl,
