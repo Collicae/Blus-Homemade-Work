@@ -77,7 +77,7 @@ const Cart_App = () => {
         email_address: Email 
       };
   
-      const response = await axios.post('http://127.0.0.1:8000/api/notification-preferences/', updatedPreferences, {
+      const response = await axios.post('https://blushomemade-e0fkbbdtaadtcuhw.canadacentral-01.azurewebsites.net/api/notification-preferences/', updatedPreferences, {
         email: preferences.email,    // Email preference (true/false)
         text: preferences.text,      // Text preference (true/false)
         email_address: Email,        // User email
