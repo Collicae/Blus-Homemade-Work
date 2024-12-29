@@ -33,7 +33,7 @@ const UserSign = () => {
         };
 
         try {
-            const response = await axios.post("http://127.0.0.1:8000/api/create/", dataToSend);
+            const response = await axios.post("https://blushomemade-e0fkbbdtaadtcuhw.canadacentral-01.azurewebsites.net/api/create/", dataToSend);
             console.log(response.data)
             const { access, refresh, user_id } = response.data;
 
