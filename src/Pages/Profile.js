@@ -24,13 +24,13 @@ const Profile_App = () => {
       };
     
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/token/", credentials);
+        const response = await axios.post("https://blushomemade-e0fkbbdtaadtcuhw.canadacentral-01.azurewebsites.net/api/token/", credentials);
         const { access } = response.data;
         const decodedToken = jwtDecode(access);
         const { user_id } = decodedToken;
     
         // Make the second request with user_id
-        const userResponse = await axios.get(`http://127.0.0.1:8000/api/create/${user_id}`, {
+        const userResponse = await axios.get(`https://blushomemade-e0fkbbdtaadtcuhw.canadacentral-01.azurewebsites.net/api/create/${user_id}`, {
           headers: {
             Authorization: `Bearer ${access}`
           }
