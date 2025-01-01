@@ -252,6 +252,10 @@
         font-size: 15px;
 }
 
+     #CartDelivery #deliveryAddress select{
+        font-size: 20px;
+    }
+
     #CartDelivery #deliveryAddress{
         padding: 0 0.2em;
         flex-direction: column;
