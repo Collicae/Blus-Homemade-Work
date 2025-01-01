@@ -247,6 +247,10 @@
         padding: 1em 0;
     }
 
+    #CartDelivery #cartState{
+    width: 4em;
+}
+
     #CartDelivery #deliveryAddress{
         padding: 0 0.2em;
         flex-direction: column;
