@@ -357,6 +357,7 @@ Do not effect code above!!!!*/
     #info_Body h2{
         margin: .40em 0 0 .60em;
         padding: 0;
+        text-align: center;
     }
 
     #info_Body p{
