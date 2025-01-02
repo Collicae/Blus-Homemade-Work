@@ -216,6 +216,7 @@ const Info_App = () => {
             <div id="info_Body">
                 <h2>Hesitant to Buy?</h2>
                 <p className="info_Under_Txt" id="info_P_1">No worries. Just request a sample bag and one will be shipped to you for free</p>
+                    <br/>
                 <p className="info_Under_Txt" id="info_P_2">Sample bags come in a smaller size compared to the regular bags</p>
             </div>
 
