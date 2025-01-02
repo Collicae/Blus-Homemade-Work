@@ -339,7 +339,7 @@ footer table{
     margin: 0 3em 0 0;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 970px){
     #main_Header img{
         height:55vw;
         
@@ -348,7 +348,7 @@ footer table{
 }
 
 /* media query used to affect different elements for different screens*/
-@media screen and (max-width: 850px){
+@media screen and (max-width: 890px){
     /*These get rid of the elements from the computer view so that they don't mix*/
     .computer_Head{
         display: none;
